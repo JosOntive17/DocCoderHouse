@@ -8,7 +8,6 @@
    <title>doctumento para CoderHouse</title>
    
    <script defer src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script defer src = "ajax.jsin"></script>
    <script defer src="archivo.js" ></script>
    
 <body>
@@ -22,35 +21,33 @@
          <div id="tituloInventario"><h2 class= titulo2><b>Bienvenido a tu inventario</b></h2></div>
          <img id="imagenPrincipal" src="https://play-lh.googleusercontent.com/ZCPU-kMTABemdqxWwp7UmbzDI7hghnJGzj7g-4bQZeBYzhB567ECIkzFuQPo2lnyRI4">
    </nav>
-   <div Class= " div-header">
-            <h4>Agrega mas productos
+         <u>
+            <h4>
+               Agrega mas productos
             </h4>
-   </div>
-
-   <form id="formulario">
-    <!---input para poner nombre al producto-->
-    <div id="divBody">       
-          Nombre del Producto a agregar
-          <br><input type="text" id="name" placeholder=" Nombre"><br>
-            <br>
-            <!--input para poner precio al producto-->
-          Cantidad del Producto <br>
-          <input type="number" id="cantidad" placeholder="Cantidad" min="0"><br>
-          <br>
-          <!----input para poner la fecha de vencimiento del producto-->
-          Fecha de vencimiento <br>
-          <input type="text" id="vencimiento" placeholder=" Fecha de vencimiento" minlength="0" maxlength="5"><br>
-          <br>
-          <!-------input para el precio del producto-->
-          Ingresa el precio <br>
-          <input type="number" id="precio" placeholder="Precio" min="0"><br>
-          <br>
-          <!---boton para guardar-->
-             <button type="submit" id="submit">Guardar</button>
-        </div>
-   </form>
-       
-
+         </u>
+   <div Class= "div-header">
+          <div class="flex-conteiner">
+               <form id="formulario" class="form">
+      <!---input para poner nombre al producto-->
+                  <div id="divBody" class= "form_div">       
+                    Nombre del Producto a agregar<br>
+                         <input type="text" class="form__imput"id="name" placeholder=" Nombre"><br><br>
+    <!--input para poner precio al producto-->
+                    Cantidad del Producto <br>
+                         <input type="number" class="form__imput id="cantidad" placeholder="Cantidad" min="0"><br><br>
+    <!----input para poner la fecha de vencimiento del producto-->
+                          Fecha de vencimiento <br>
+                           <input type="text" class="form__imput" id="vencimiento" placeholder=" Fecha de vencimiento" minlength="0" maxlength="5"><br><br>
+    <!-------input para el precio del producto-->
+                            Ingresa el precio <br>
+                            <input type="number" class="form__imput id="precio" placeholder="Precio" min="0"><br><br>
+    <!---boton para guardar-->
+                            <button type="submit" class="form__imput" id="submit">Guardar</button>
+                   </div>
+               </form>
+              </div>
+          </div>
 
  <!---Lista total de productos agregados-->
  <p id="personas">
@@ -60,14 +57,13 @@
          </strong>  
  </p>
  <div id = "productosNew"></div>
-
- <div id=topProductos>
-       <h3>
+      <div id=topProductos>
+          <h3>
              Estos son los productos con mayor stock
-       </h3>
- <button id="containerProducts" onclick="cargoLista()">Click aqui</button>
-      
-</div> 
-
-</body>
+         </h3>
+                 <button id="containerProducts" onclick="cargoLista()">Click aqui
+            </button>      
+         </div> 
+    
+  </body>
 </html>
